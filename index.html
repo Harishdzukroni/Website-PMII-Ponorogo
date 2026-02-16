@@ -3,76 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMII Rayon/Komisariat [Nama Lokasi]</title>
+    <title>PMII Rayon/Komisariat Ponorogo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">PMII ONLINE</div>
-            <ul>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo PMII" class="logo-img">
+                <span class="logo-text">PMII <span>Ponorogo</span></span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#kontak">Beri Masukan</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="kontak.html" class="btn-nav">Beri Masukan</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h1>Selamat Datang di Website PMII</h1>
-        <p>Dzikir, Fikir, dan Amal Sholeh</p>
-        <p>Tangan Terkepal dan Maju ke Muka!</p>
-    </section>
-
-    <section id="about" class="container">
-        <h2>Tentang Organisasi</h2>
-        <p>
-            Pergerakan Mahasiswa Islam Indonesia (PMII) adalah organisasi gerakan dan kaderisasi 
-            yang berlandaskan Islam Ahlussunnah wal Jamaah. Di sini kami belajar untuk menjadi 
-            pribadi ulul albab yang memperjuangkan cita-cita kemerdekaan Indonesia.
-        </p>
-        </section>
-
-    <section id="galeri" class="container">
-        <h2>Dokumentasi Kegiatan</h2>
-        <div class="gallery-grid">
-            <div class="photo-card">
-                <img src="images/kegiatan1.jpg" alt="Foto MAPABA">
-                <p>Masa Penerimaan Anggota Baru (MAPABA)</p>
-            </div>
-            <div class="photo-card">
-                <img src="images/kegiatan2.jpg" alt="Foto Diskusi">
-                <p>Diskusi Rutin Mingguan</p>
-            </div>
-            <div class="photo-card">
-                <img src="images/kegiatan3.jpg" alt="Foto Bakti Sosial">
-                <p>Bakti Sosial Masyarakat</p>
-            </div>
+        <div class="hero-content">
+            <h1>Dzikir, Fikir, dan Amal Sholeh</h1>
+            <p>Membangun pribadi muslim Indonesia yang bertaqwa, berbudi luhur, berilmu, cakap dan bertanggung jawab.</p>
+            <a href="#about" class="btn-primary">Pelajari Lebih Lanjut</a>
         </div>
     </section>
 
-    <section id="kontak" class="container feedback-section">
-        <h2>Kotak Masukan & Saran</h2>
-        <p>Punya ide untuk kemajuan organisasi? Tulis di bawah ini:</p>
-        
-        <form action=https://formspree.io/f/mgolywvb method="POST">
-            <label>Nama (Opsional):</label>
-            <input type="text" name="nama">
+    <section id="about" class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p class="section-desc">
+                Pergerakan Mahasiswa Islam Indonesia (PMII) adalah organisasi gerakan dan kaderisasi 
+                yang berlandaskan Islam Ahlussunnah wal Jamaah. Kami berkomitmen memperjuangkan cita-cita 
+                kemerdekaan Indonesia dengan semangat keislaman dan keindonesiaan.
+            </p>
+        </div>
+    </section>
 
-            <label>Email:</label>
-            <input type="email" name="email" required>
+    <section id="galeri" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Dokumentasi Kegiatan</h2>
+            
+            <div class="gallery-window">
+                <div class="gallery-track">
+                    
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/penerimaan.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>MAPABA</h3><p>Masa Penerimaan Anggota Baru</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/diskusi.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Diskusi Rutin</h3><p>Kajian Intelektual Mingguan</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/bakti sosial.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Bakti Sosial</h3><p>Pengabdian kepada Masyarakat</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/bukabersama.png" alt="Foto Kegiatan Baru"></div>
+                        <div class="card-content"><h3>Buka Bersama</h3><p>Buka bersama seluruh anggota</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/mengajar.png" alt="Foto Kegiatan Lainnya"></div>
+                        <div class="card-content"><h3>Pendidikan</h3><p>Mengajar anak-anak sekitar</p></div>
+                    </div>
 
-            <label>Pesan/Masukan:</label>
-            <textarea name="pesan" rows="5" required></textarea>
 
-            <button type="submit">Kirim Masukan</button>
-        </form>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/penerimaan.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>MAPABA</h3><p>Masa Penerimaan Anggota Baru</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/diskusi.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Diskusi Rutin</h3><p>Kajian Intelektual Mingguan</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/bakti sosial.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Bakti Sosial</h3><p>Pengabdian kepada Masyarakat</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/bukabersama.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Buka Bersama</h3><p>Buka bersama seluruh anggota</p></div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="img-wrapper"><img src="images/mengajar.png" alt="Foto Kegiatan"></div>
+                        <div class="card-content"><h3>Pendidikan</h3><p>Mengajar anak-anak sekitar</p></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 15px; color: #888; font-size: 0.9rem;">
+                (Arahkan kursor ke gambar untuk menghentikan gerakan)
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 PMII [Nama Lokasi]. Salam Pergerakan.</p>
+        <p>&copy; 2026 Pergerakan Mahasiswa Islam Indonesia. <br>Salam Pergerakan.</p>
     </footer>
 
 </body>
