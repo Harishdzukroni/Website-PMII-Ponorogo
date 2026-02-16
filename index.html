@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMII Rayon/Komisariat [Nama Lokasi]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">PMII ONLINE</div>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Beri Masukan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Selamat Datang di Website PMII</h1>
+        <p>Dzikir, Fikir, dan Amal Sholeh</p>
+        <p>Tangan Terkepal dan Maju ke Muka!</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Tentang Organisasi</h2>
+        <p>
+            Pergerakan Mahasiswa Islam Indonesia (PMII) adalah organisasi gerakan dan kaderisasi 
+            yang berlandaskan Islam Ahlussunnah wal Jamaah. Di sini kami belajar untuk menjadi 
+            pribadi ulul albab yang memperjuangkan cita-cita kemerdekaan Indonesia.
+        </p>
+        </section>
+
+    <section id="galeri" class="container">
+        <h2>Dokumentasi Kegiatan</h2>
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="images/kegiatan1.jpg" alt="Foto MAPABA">
+                <p>Masa Penerimaan Anggota Baru (MAPABA)</p>
+            </div>
+            <div class="photo-card">
+                <img src="images/kegiatan2.jpg" alt="Foto Diskusi">
+                <p>Diskusi Rutin Mingguan</p>
+            </div>
+            <div class="photo-card">
+                <img src="images/kegiatan3.jpg" alt="Foto Bakti Sosial">
+                <p>Bakti Sosial Masyarakat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="container feedback-section">
+        <h2>Kotak Masukan & Saran</h2>
+        <p>Punya ide untuk kemajuan organisasi? Tulis di bawah ini:</p>
+        
+        <form action=https://formspree.io/f/mgolywvb method="POST">
+            <label>Nama (Opsional):</label>
+            <input type="text" name="nama">
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Pesan/Masukan:</label>
+            <textarea name="pesan" rows="5" required></textarea>
+
+            <button type="submit">Kirim Masukan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PMII [Nama Lokasi]. Salam Pergerakan.</p>
+    </footer>
+
+</body>
+</html>
